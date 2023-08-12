@@ -1,0 +1,122 @@
+body{
+    color:white;
+    font-weight:bold;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/* common classes */
+.d-flex-between{
+    display:flex;
+    justify-content: space-between;
+}
+.pt-30{
+    padding-top:30px;
+    /* padding-bottom:20px; */
+}
+.font-14{
+    font-size:14px;
+}
+.font-24{
+    font-size:24px;
+}
+.font-46{
+    font-size:46px;
+}
+.text-center{
+    text-align: center;
+}
+
+.main_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    border-radius:8px;
+    background: linear-gradient(to top right,#5F9EA0, #89CFF0 25%, #6CB4EE 40%,#5072A7 60%,#002D62 85%);
+}
+.nav_bar {
+    height: 15%;
+}
+
+.center_box {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-demo .item {
+    background: #ff3f4d;
+}
+.home-demo h2 {
+    color: #FFF;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+.owl-nav{
+    display:none;
+}
+.item{
+    align-items: center;
+}
+.image{
+    height:420px;
+    width:500px;
+    position: relative;
+}
+.image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    left: 50%;
+    top: 0;
+    animation: image_move 2s linear infinite; 
+}
+.content{
+    width:46%;
+}
+.image{
+    width:54%;
+}
+.learn-more-btn {
+    background-color: white;
+    color:#5F9EA0 ;
+    text-decoration: none;
+    border-radius:  18px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 24px;
+    transition: background-color 0.3s;
+}
+.owl-dots{
+    margin-top:28px;
+}
+.content p{
+    animation: text_move 1s linear infinite; 
+}
+@keyframes image_move {
+    0% {
+        transform-origin: top right;
+        transform: translatey(-120px);
+    }
+    100% {
+        transform: translateX(-90px);
+        transform-origin: top right;
+    }
+}
+@keyframes text_move {
+    from {
+        transform: translateY(0%); 
+    }
+    to {
+        transform: translateY(-20%);
+    }
+
+}
